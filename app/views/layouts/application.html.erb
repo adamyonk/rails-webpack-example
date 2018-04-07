@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webpacked</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag webpack_asset_url('application.css'), media: 'all' %>
+    <%= javascript_include_tag webpack_asset_url('runtime.js') %>
+    <%= javascript_include_tag webpack_asset_url('application.js') %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
